@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import "pages/home.dart";
+
+
 void main() {
   runApp(const CepToMapApp());
 }
@@ -32,7 +35,7 @@ class CepToMapApp extends StatelessWidget {
       ),
       initialRoute: "/",
       routes: {
-        "/": (context) => Placeholder(),
+        "/": (context) => HomePage(),
       },
     );
   }
