@@ -1,9 +1,13 @@
 import "package:flutter/material.dart";
 
+import "../widgets/cep_input.dart";
+
 
 class HomePage extends StatelessWidget 
 {
-  const HomePage({ super.key });
+  final TextEditingController _cepInputController = TextEditingController();
+
+  HomePage({ super.key });
 
   @override
   Widget build(BuildContext context) 
@@ -19,7 +23,9 @@ class HomePage extends StatelessWidget
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[],
+        children: <Widget>[
+          CEPInput(Icons.search, () {}, _cepInputController)
+        ],
       ),
     );
   }
